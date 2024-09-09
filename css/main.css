@@ -274,7 +274,7 @@ a {
   .process {
     max-width: 993px;
     margin: 0 auto;
-    background: url(/images/curly-arrow.png) no-repeat;
+    background: url(./../images/curly-arrow.png) no-repeat;
     background-position-x: 45%;
     background-position-y: 60%;
   }
