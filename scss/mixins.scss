@@ -1,0 +1,58 @@
+@mixin fontPoppins($weight, $size, $line) {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line;
+}
+
+@mixin fontRaleway($weight, $size, $line) {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin btn {
+  max-width: 214px;
+  height: 45px;
+  text-decoration: none;
+  color: $text-color;
+  @include fontPoppins(600, 14px, 21px);
+  background-color: $primary-color;
+  @include flexCenter;
+  border-radius: 8px;
+  box-shadow: 0 0 44px rgba(37, 69, 220, 0.35);
+}
+
+@mixin logo {
+  display: flex;
+  align-items: center;
+    &__text {
+      color: $secondary-color;
+      @include fontPoppins(500, 22px, 33px);
+    }
+}
+
+@mixin title {
+  @include fontPoppins(700, 20px, 28px);
+  color: $text-color;
+}
+
+@mixin mainText {
+  @include fontPoppins(400, 14px, 19.6px);
+  color: $text-color;
+}

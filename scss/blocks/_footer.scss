@@ -1,0 +1,44 @@
+.footer {
+  max-width: 81%;
+  margin: 40px auto;
+  .logo {
+    @include logo;
+    gap: 8px;
+  }
+
+  &-nav-menu {
+    max-width: 95%;
+    margin: 20px 0;
+    @include flexSpaceBetween;
+
+    &__item {
+      @include fontRaleway(700, 12px, 16.8px);
+      color: $text-color;
+    }
+  }
+
+  &__copyright {
+    @include fontPoppins(400, 12px, 18px);
+    color: $text-color;
+  }
+}
+
+@media(min-width:1280px){
+  .footer{
+    margin: 80px auto 144px;
+    max-width: 993px;
+    @include flexSpaceBetween;
+    flex-direction: row-reverse;
+    .logo{
+      flex-direction: column-reverse;
+    }
+
+    &__text{
+      min-width: 45%;
+    }
+
+    &-nav-menu{
+      margin-top: 0;
+    }
+  }
+}

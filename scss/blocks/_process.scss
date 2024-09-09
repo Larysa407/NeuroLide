@@ -1,0 +1,91 @@
+.process {
+  &__title {
+    @include title;
+    padding: 46.86px 0 60px;
+    text-align: center;
+  }
+
+  .btn {
+    @include btn;
+    margin: 40px auto 0;
+  }
+
+  .dotted {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+  }
+
+  &-block {
+    &__img {
+      max-width: 306px;
+      max-height: 268px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__text {
+      max-width: 55.5%;
+      margin: 0 auto;
+      text-align: center;
+      @include mainText;
+      padding-top: 12px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .process {
+    max-width: 993px;
+    margin: 0 auto;
+    background: url(/images/curly-arrow.png) no-repeat;
+    background-position-x: 45%;
+    background-position-y: 60%;
+
+    &__title {
+      @include fontPoppins(700, 34px, 47.6px);
+      padding: 80px 0 40px;
+    }
+
+    .dotted{
+      display: none;
+    }
+
+
+    &-block {
+      margin: 0;
+      @include flexSpaceBetween;
+      max-width: 92.2%;
+      margin: 0 auto;
+      gap: 110px;
+
+
+      &__img {
+        margin: 0;
+        display: block;
+        min-width: 355px;
+        min-height: 317px;
+      }
+
+      &__text {
+        margin: 0;
+        max-width: 85%;
+        text-align: left;
+        @include fontPoppins(400, 18px, 25.2px);
+      }
+
+      .btn{
+        margin: 20px 0 0;
+      }
+    }
+
+
+    &-block:nth-child(2) {
+      max-width: 86%;
+      margin: 0 auto;
+      .process-block__img {
+        order: 2;
+      }
+    }
+  }
+}
