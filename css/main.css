@@ -68,6 +68,8 @@ a {
 .header .logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  gap: 8px;
 }
 .header .logo__text {
   color: #CBCBCB;
@@ -136,15 +138,18 @@ a {
 .header .intro .arrow {
   display: block;
   margin: 0 auto 19px;
-  animation: bounce 0.7s alternate infinite;
+  animation: bounce 1.4s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
 }
 
 @keyframes bounce {
-  from {
+  0% {
     transform: translate3d(0, 0, 0);
   }
-  to {
-    transform: translate3d(0, 10px, 0);
+  50% {
+    transform: translate3d(0, 12px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
   }
 }
 @media (min-width: 1280px) {
@@ -166,6 +171,11 @@ a {
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
+    cursor: pointer;
+  }
+  .header .login .login__text:hover {
+    color: #2545DC;
+    transition: 0.4s ease-in-out;
   }
   .header .btn {
     margin: 0 0 0 44px;
@@ -660,6 +670,7 @@ a {
 .footer .logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
   gap: 8px;
 }
 .footer .logo__text {
@@ -717,19 +728,24 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #101112;
   box-sizing: border-box;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
 }
 body .main {
-  max-width: 100%;
-  background-color: #1C1D20;
-  border: 1px solid #2C2D32;
+  background-color: #1c1d20;
+  border: 1px solid #2c2d32;
   border-radius: 34px 34px 0 0;
-  box-shadow: 0 0 88px rgba(37, 69, 220, 0.55);
+  box-shadow: 0 -15px 30px rgba(37, 69, 220, 0.25);
+}
+@media (min-width: 320px) and (max-width: 1279.98px) {
+  body .main {
+    min-width: 100%;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 1280px) {
   body .main {
-    max-width: 88.8%;
+    width: 89%;
     margin: 0 auto;
   }
 }

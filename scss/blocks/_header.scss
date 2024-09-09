@@ -9,6 +9,7 @@
 
   .logo {
     @include logo;
+    gap: 8px;
   }
 
   .btn {
@@ -51,14 +52,15 @@
     .arrow {
       display: block;
       margin: 0 auto 19px;
-      animation: bounce 0.7s alternate infinite;
+      animation: bounce 1.4s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
     }
   }
 }
 
 @keyframes bounce {
-  from { transform: translate3d(0, 0, 0);     }
-  to   { transform: translate3d(0, 10px, 0); }
+  0% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, 12px, 0); }
+  100% { transform: translate3d(0, 0, 0); }
 }
 
 @media (min-width: 1280px) {
@@ -77,7 +79,14 @@
       &__text {
         @include fontPoppins(600, 14px, 21px);
         color: $text-color;
+        cursor: pointer;
       }
+
+      .login__text:hover{
+        color: $primary-color;
+        transition: 0.4s ease-in-out;
+      }
+
     }
 
     .btn {

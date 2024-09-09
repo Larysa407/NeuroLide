@@ -41,6 +41,7 @@
 @mixin logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
     &__text {
       color: $secondary-color;
       @include fontPoppins(500, 22px, 33px);
