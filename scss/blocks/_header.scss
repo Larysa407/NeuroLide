@@ -58,9 +58,15 @@
 }
 
 @keyframes bounce {
-  0% { transform: translate3d(0, 0, 0); }
-  50% { transform: translate3d(0, 12px, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 12px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media (min-width: 1280px) {
@@ -82,11 +88,10 @@
         cursor: pointer;
       }
 
-      .login__text:hover{
+      .login__text:hover {
         color: $primary-color;
         transition: 0.4s ease-in-out;
       }
-
     }
 
     .btn {

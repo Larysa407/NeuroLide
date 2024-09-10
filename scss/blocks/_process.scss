@@ -47,10 +47,9 @@
       padding: 80px 0 40px;
     }
 
-    .dotted{
+    .dotted {
       display: none;
     }
-
 
     &-block {
       margin: 0;
@@ -59,12 +58,22 @@
       margin: 0 auto;
       gap: 110px;
 
-
       &__img {
         margin: 0;
         display: block;
         min-width: 355px;
         min-height: 317px;
+      }
+
+      &-text {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: opacity 0.2s ease-out, transform 0.6s ease-out;
+      }
+
+      &-text.visible {
+        opacity: 1;
+        transform: translateY(0);
       }
 
       &__text {
@@ -74,7 +83,7 @@
         @include fontPoppins(400, 18px, 25.2px);
       }
 
-      .btn{
+      .btn {
         margin: 20px 0 0;
       }
     }

@@ -23,21 +23,21 @@
   }
 }
 
-@media(min-width:1280px){
-  .footer{
+@media (min-width: 1280px) {
+  .footer {
     margin: 80px auto 144px;
     max-width: 993px;
     @include flexSpaceBetween;
     flex-direction: row-reverse;
-    .logo{
+    .logo {
       flex-direction: column-reverse;
     }
 
-    &__text{
+    &__text {
       min-width: 45%;
     }
 
-    &-nav-menu{
+    &-nav-menu {
       margin-top: 0;
     }
   }

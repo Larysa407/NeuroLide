@@ -1,18 +1,86 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@0400;500;600;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap);
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,8 +90,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -31,16 +108,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -72,7 +153,7 @@ a {
   gap: 8px;
 }
 .header .logo__text {
-  color: #CBCBCB;
+  color: #cbcbcb;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -89,7 +170,7 @@ a {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
-  background-color: #2545DC;
+  background-color: #2545dc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,7 +199,7 @@ a {
   margin: 0 auto;
 }
 .header .intro-heading__text {
-  color: #CBCBCB;
+  color: #cbcbcb;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -174,7 +255,7 @@ a {
     cursor: pointer;
   }
   .header .login .login__text:hover {
-    color: #2545DC;
+    color: #2545dc;
     transition: 0.4s ease-in-out;
   }
   .header .btn {
@@ -248,7 +329,7 @@ a {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
-  background-color: #2545DC;
+  background-color: #2545dc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,6 +395,15 @@ a {
     min-width: 355px;
     min-height: 317px;
   }
+  .process-block-text {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.2s ease-out, transform 0.6s ease-out;
+  }
+  .process-block-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
   .process-block__text {
     margin: 0;
     max-width: 85%;
@@ -360,7 +450,7 @@ a {
   font-size: 14px;
   line-height: 19.6px;
   color: #ffffff;
-  color: #CBCBCB;
+  color: #cbcbcb;
   text-align: center;
   padding-bottom: 60px;
 }
@@ -492,7 +582,7 @@ a {
   font-size: 14px;
   line-height: 19.6px;
   color: #ffffff;
-  color: #CBCBCB;
+  color: #cbcbcb;
   padding-bottom: 20px;
 }
 .reviews-block .btn {
@@ -505,7 +595,7 @@ a {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
-  background-color: #2545DC;
+  background-color: #2545dc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -539,7 +629,7 @@ a {
     font-weight: 400;
     font-size: 18px;
     line-height: 25.2px;
-    color: #CBCBCB;
+    color: #cbcbcb;
     padding-bottom: 83px;
   }
   .reviews-blocks {
@@ -582,7 +672,7 @@ a {
   font-size: 14px;
   line-height: 19.6px;
   color: #ffffff;
-  color: #CBCBCB;
+  color: #cbcbcb;
   max-width: 82%;
 }
 .features-block__img {
@@ -674,7 +764,7 @@ a {
   gap: 8px;
 }
 .footer .logo__text {
-  color: #CBCBCB;
+  color: #cbcbcb;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -735,7 +825,8 @@ body .main {
   background-color: #1c1d20;
   border: 1px solid #2c2d32;
   border-radius: 34px 34px 0 0;
-  box-shadow: 0 -15px 30px rgba(37, 69, 220, 0.25);
+  box-shadow: 0px -10px 20px -6px rgba(37, 69, 220, 0.55);
+  transition: 0.2s ease-out;
 }
 @media (min-width: 320px) and (max-width: 1279.98px) {
   body .main {
