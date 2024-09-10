@@ -140,7 +140,7 @@ a {
   padding: 29px 0 26.86px;
 }
 .header-container {
-  min-width: 81.5%;
+  max-width: 81.5%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -235,7 +235,7 @@ a {
 }
 @media (min-width: 1280px) {
   .header {
-    max-width: inherit;
+    max-width: 81.5%;
     margin: 0 auto;
   }
   .header .logout {
@@ -264,8 +264,7 @@ a {
     max-height: 37px;
   }
   .header .intro {
-    min-width: -moz-fit-content;
-    min-width: fit-content;
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -277,7 +276,6 @@ a {
     justify-content: end;
   }
   .header .intro-heading__title, .header .intro-heading__text {
-    min-width: 98.2%;
     margin: 0;
     text-align: left;
   }
@@ -287,6 +285,7 @@ a {
     font-weight: 700;
     font-size: 34px;
     line-height: 47.6px;
+    min-width: 92%;
   }
   .header .intro-heading__text {
     font-family: "Poppins";
@@ -294,7 +293,7 @@ a {
     font-weight: 400;
     font-size: 16px;
     line-height: 22.4px;
-    min-width: 70%;
+    min-width: 61%;
   }
   .header .intro__btn {
     max-width: 102px;

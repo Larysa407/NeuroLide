@@ -2,7 +2,7 @@
   padding: 29px 0 26.86px;
 
   &-container {
-    min-width: 81.5%;
+    max-width: 81.5%;
     margin: 0 auto;
     @include flexSpaceBetween;
   }
@@ -71,7 +71,7 @@
 
 @media (min-width: 1280px) {
   .header {
-    max-width: inherit;
+    max-width: 81.5%;
     margin: 0 auto;
 
     .logout {
@@ -101,7 +101,7 @@
     }
 
     .intro {
-      min-width: fit-content;
+      max-width: 100%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
@@ -114,18 +114,18 @@
 
         &__title,
         &__text {
-          min-width: 98.2%;
           margin: 0;
           text-align: left;
         }
 
         &__title {
           @include fontPoppins(700, 34px, 47.6px);
+          min-width: 92%;
         }
 
         &__text {
           @include fontPoppins(400, 16px, 22.4px);
-          min-width: 70%;
+          min-width: 61%;
         }
       }
 
