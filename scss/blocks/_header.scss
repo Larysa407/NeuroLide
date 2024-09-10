@@ -2,7 +2,7 @@
   padding: 29px 0 26.86px;
 
   &-container {
-    max-width: 91.5%;
+    min-width: 81.5%;
     margin: 0 auto;
     @include flexSpaceBetween;
   }
@@ -71,7 +71,7 @@
 
 @media (min-width: 1280px) {
   .header {
-    max-width: 993px;
+    max-width: inherit;
     margin: 0 auto;
 
     .logout {
@@ -101,6 +101,7 @@
     }
 
     .intro {
+      min-width: fit-content;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
@@ -124,6 +125,7 @@
 
         &__text {
           @include fontPoppins(400, 16px, 22.4px);
+          min-width: 70%;
         }
       }
 
@@ -138,7 +140,6 @@
         min-width: 516px;
         min-height: 418px;
         grid-row: 1/3;
-        margin-left: -59px;
       }
 
       .arrow {
